@@ -80,12 +80,6 @@ with tab1:
         with st.container(height=450):
             my_data_element = st.line_chart(df)
 
-            for tick in range(10):
-                time.sleep(.5)
-                add_df = pd.DataFrame(np.random.randn(1, 3), columns=(["A", "B", "C"]))
-                my_data_element.add_rows(add_df)
-                # my_data_element.delete_rows()
-
             def link():
                 webbrowser.open_new_tab('https://dev-app.drisk.ai/?graphId=411e73fa-0416-43a9-ab01-d3c22907d01b&viewId=5c527f64-0d9b-4055-8097-783eca9bebaf')
 
